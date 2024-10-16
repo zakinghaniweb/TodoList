@@ -1,4 +1,4 @@
-/* General styling for the body and container */
+
 body {
     margin: 0;
     padding: 0;
@@ -23,60 +23,62 @@ body {
         background-position: 0% 50%;
     }
 }
-.container {
-    width: 100%;
-    max-width: 500px;
-    padding: 20px;
-}
-
 .todo-wrap {
+    width: 700px;
     background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 40px;
+    border-radius: 25px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
-
-h1 {
-    font-size: 24px;
+.edit-btn {
+    background-color: #7e60bf;
+}
+.edit-btn:hover {
+    background-color: #7e60bf;
+}
+.todoHeading{
+    font-size: 30px;
     color: #4A4A4A;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
-
 .input-group {
+    width: 100%;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 15px;
+    border: 2px solid #6a11cb;
 }
 
 #todo-input {
-    width: 80%;
-    padding: 10px;
-    border: 2px solid #7e60bf;
-    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    border-radius: 15px;
     font-size: 16px;
     outline: none;
+    border: none;
+    background: transparent;
 }
 
-#todo-input:focus {
-    border-color: #7e60bf;
-}
-
-button {
-    padding: 10px 15px;
+.input-group button {
+    width: 100px;
+    height: 100%;
     background-color: #7e60bf;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 12px;
+    border: 2px solid #6a11cb;
     cursor: pointer;
     font-size: 16px;
+    font-weight: 700;
 }
 
 button:hover {
     background-color: #6a11cb;
 }
-
-/* Styling the todo list */
 ul {
     list-style: none;
     padding: 0;
@@ -93,8 +95,6 @@ ul li {
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
-
-
 ul li button {
     background-color: #ff4757;
     border: none;
@@ -104,17 +104,18 @@ ul li button {
     cursor: pointer;
     font-size: 14px;
 }
-
+ul li input{
+    border: none;
+    outline: none;
+    background: transparent;
+}
 ul li button:hover {
     background-color: #ff6b81;
 }
-
-/* Responsive design */
 @media (max-width: 600px) {
     #todo-input {
         width: 70%;
     }
-
     button {
         width: 25%;
     }
